@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senhas Seguras</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Senhas Seguras</h1>
+    <p>Crie senhas fortes e fáceis de lembrar</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="golpes.html">Golpes</a></li>
+<li><a href="senhas.html">Senhas</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<div class="info-card">
+
+<h2>🔐 Gerador de Senha</h2>
+
+<input type="text" id="nome" placeholder="Nome do Pet">
+
+<input type="text" id="cor" placeholder="Cor Favorita">
+
+<input type="number" id="ano" placeholder="Ano Importante">
+
+<button onclick="gerarSenha()">
+Gerar Senha
+</button>
+
+<p class="resultado" id="senhaGerada"></p>
+
+</div>
+
+<div class="info-card">
+
+<h2>📊 Teste sua Senha</h2>
+
+<input
+type="text"
+id="senhaUsuario"
+placeholder="Digite sua senha"
+onkeyup="avaliarSenha()">
+
+<p class="resultado" id="forcaSenha"></p>
+
+</div>
+
+<div class="info-card">
+
+<h2>💡 Exemplos</h2>
+
+<p>❌ 123456</p>
+
+<p>❌ maria123</p>
+
+<p>✅ Maria#1980!</p>
+
+<p>✅ Azul@Casa2025</p>
+
+</div>
+
+</div>
+
+<footer>
+<p>Projeto Extensionista - ADS - UNINTER</p>
+</footer>
+
+<script src="js/senhas.js"></script>
+
+</body>
+</html>
